@@ -15,7 +15,7 @@ public class AsignadorDeVehiculoDeEntregaTest {
      List<String> paquetes = new LinkedList<>();
      paquetes.add("libro");
      paquetes.add("libro");
-     paquetes.add("libro");
+     paquetes.add("milibro");
      
      AsignadorDeVehiculo asignador = new AsignadorDeVehiculo();
      Envio envio = asignador.Asignar(paquetes);
