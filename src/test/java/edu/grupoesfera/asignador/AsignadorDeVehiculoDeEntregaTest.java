@@ -20,7 +20,6 @@ public class AsignadorDeVehiculoDeEntregaTest {
      AsignadorDeVehiculo asignador = new AsignadorDeVehiculo();
      Envio envio = asignador.Asignar(paquetes);
      assertThat(envio.getVehiculo()).isEqualTo("BICICLETA");
-     
 	}
 	
 	@Test
