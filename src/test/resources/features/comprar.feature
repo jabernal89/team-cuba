@@ -11,11 +11,36 @@ Feature: Compra de productos
   Solo a los libros se le aplica la promoción 3 x 2.
   Si se compran libros y otro producto la promoción corre unicamente para los libros.
 
-#  Scenario:
-#    Given
-#    And
-#    When
-#    And
-#    Then
-#    And
+  Scenario: Compra de libros con promoción 3x2
+    Given - La compra genera una factura
+    And
+    When - Se realiza la compra de 3 libros
+    And
+    Then - Se aplica una promoción 3x2
+    And
+    
+    Scenario: Compra de libros sin promoción 3x2
+    Given - La compra genera una factura
+    And
+    When - Se realiza la compra de 2 libros
+    And
+    Then - No se aplica la promoción 3x2
+    And
+    
+    Scenario: Compra de otro producto
+    Given - La compra genera una factura
+    And
+    When - Se realiza la compra de otro producto
+    And
+    Then - No se aplica la promoción
+    And
+    
+    Scenario: Compra de libros con promoción 3x2 y otro producto
+    Given - La compra genera una factura
+    And
+    When - Se realiza la compra de 3 libros
+    And - Otro producto
+    Then - Se aplica la promoción 3x2 solo para libro
+    And
+    
 
