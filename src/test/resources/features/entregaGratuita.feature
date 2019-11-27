@@ -11,42 +11,29 @@ Feature: Entrega gratuita para clientes VIP
 
   Scenario: Cliente VIP que compra 7 libros
     Given - El cliente es VIP
-    And
     When - Compra 7 libros
-    And
     Then - La entrega es gratuita
-    And
     
     
     Scenario: Cliente es VIP y compra 4 libros
     Given - El cliente es VIP
-    And
     When - Compra 4 libros
-    And
     Then - La entrega no es gratuita
-    And
     
     Scenario: Cliente no es VIP que compra 7 libros
     Given - El cliente no es VIP
-    And
     When - Compra 7 libros
-    And
     Then - La entrega no es gratuita
-    And
     
     Scenario: Cliente es VIP que compra 7 libros
     Given - El cliente es VIP
-    And
     When - Compra 7 libros
     And - Compra 7 DVD
     Then - La entrega no es gratuita
-    And - 
     
     Scenario: Cliente es VIP que compra 5 DVD
     Given - El cliente es VIP
     And - El cliente es Regular
     When - Compra 7 DVD
-    And - 
     Then - La entrega no es gratuita
-    And - 
     

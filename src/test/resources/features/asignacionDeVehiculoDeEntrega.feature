@@ -12,32 +12,20 @@ Feature: Asignación de vehiculo que realizará la entrega al envio.
 
   Scenario: Entrega de 3 paquetes en bicicleta
     Given - El pedido de la compra de libros
-    And -
     When - De 3 libros paquetes
-    And -
     Then - Entrega en bicicleta
-    And -
     
     Scenario: Entrega en moto de 8 paquetes
     Given - El pedido
-    And -
     When - De 8 paquetes
-    And -
     Then - Entrega en moto
-    And -
     
     Scenario: Entrega en auto de 11 paquetes
     Given - El pedido
-    And -
     When - De 11 paquetes
-    And -
     Then - Entrega en auto
-    And -
     
     Scenario: Entrega de pedidos de 31 paquetes
     Given - El pedido
-    And -
     When - De 31 paquetes
-    And -
     Then - No se asigna vehiculos
-    And -
